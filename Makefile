@@ -11,7 +11,7 @@ run:
 	python job.py
 
 tests:
-	pytest
+	pytest --capture=no --log-cli-level=INFO
 	
 mongodb-start:
 	docker-compose -f infra/docker-compose-mongo.yml up -d
