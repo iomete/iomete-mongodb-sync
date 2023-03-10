@@ -3,6 +3,7 @@ docker_tag := 1.0.0
 
 export SPARK_CONF_DIR=./spark_conf
 export APPLICATION_CONFIG_PATH=application.conf
+export MONGO_PASSWORD=rootpassword
 
 install-dev-requirements:
 	pip install -r infra/requirements-dev.txt
